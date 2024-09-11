@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #001e4d;
+}
+
+.container{
+    width: 90%;
+    background: #e3f9ff;
+    max-width: 601px;
+    margin: 100px auto 0;
+    padding: 30px;
+    border-radius: 10px;
+     
+    
+     
+}
+
+.container h1{
+    font-size : 25px;
+    color: #001e4d;
+    font-weight:600px;
+    border-bottom: 1px solid #333;
+    padding-bottom : 30px;
+}
+
+#quiz{
+    padding: 20px 0;
+}
+
+#quiz h2{
+    font-size:18px;
+    
+    color: blue;
+    font-weight: 600;
+
+
+}
+
+.btn{
+    background: white;
+    color:black;
+    font-weight: 500;
+    width: 100%;
+    margin:10px;
+    padding:18px;
+    text-align: left;
+    border-radius: 4px;
+    transition: all 0.5s linear;
+}
+
+ /* only work when button is not :disabled */
+.btn:hover:not([disabled]){
+    background: black;
+    color:white;
+}
+#next-btn{
+    width:150px;
+    border: none;
+    padding:10px;
+    margin : 20px auto 0;
+    color: white;
+    background:#001e4d;
+    text-align: center;    
+}
+
+.correct{
+background: green;
+}
+
+.incorrect{
+  background: red;
+}

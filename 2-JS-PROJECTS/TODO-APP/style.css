@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+   
+    max-width: 1200px; /* optimal width for larger screens */
+    width: 100%; /* full width for smaller screens */
+    height: 100vh;
+    margin: 0 auto; 
+    padding: 20px; /* space inside the container */
+    background:linear-gradient(135deg,#153677,#4e085f); 
+    display: flex;
+    flex-direction: column;
+}
+#counter{
+    border: 2px solid white;
+    padding: 2rem;
+    font-size: 2rem;
+    max-width: 15%;
+    color: white;
+}
+.todo-app{
+    width:100%;
+    max-width:540px;
+    background: white;
+    margin : 100px auto 20px;
+    padding : 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-app h2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.todo-app h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+.row input{
+    background-color: #edeef0;
+    border : 2px solid #edeef0;
+    height: 20px;
+    flex:1;
+    border-radius: 10px;
+    padding:10px;
+}
+button{
+    border: none;
+    outline: none;
+    padding : 16px 50px;
+    background-color: orangered;
+    font-size: 16px;
+    border-radius: 40px;
+
+}
+
+ul li{
+    list-style: none;
+    user-select: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    position: relative;
+
+}
+
+/* i can do this by making div but not to clutter using psuedo selector */
+
+ul li::before{
+    content : '';
+    position: absolute;
+    align-items: center;
+    height: 28px;
+    width: 28px;
+     border-radius: 50%;
+     background-image: url(./images/unchecked.png);
+     background-size: cover ;
+     background-position: center;
+     top:12px;
+     left:8px;
+
+
+}
+
+ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ul li span{
+     width:4rem;
+     height:30px;
+     text-align: center;
+     border-radius: 10px;
+     
+
+}
+
+ul li span:hover{
+    background-color: bisque;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(./images/checked.png);
+}
+
+ul li span{
+
+}
+
+
+
+
+
